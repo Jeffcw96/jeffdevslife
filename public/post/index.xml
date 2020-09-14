@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Jeff&#39;s Blog</title>
+    <link>https://jeffdevslife.com/post/</link>
+    <description>Recent content in Posts on Jeff&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2020, Jeff&#39;s all rights reserved.</copyright>
+    <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jeffdevslife.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Password Detector</title>
+      <link>https://jeffdevslife.com/post/password-detector/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffdevslife.com/post/password-detector/</guid>
+      <description>&lt;p&gt;In this article, we will create an interative password input and use Regular Expression for validation.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Build Your Backend Server with GOLANG</title>
+      <link>https://jeffdevslife.com/post/setup-go-server/</link>
+      <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffdevslife.com/post/setup-go-server/</guid>
+      <description>&lt;p&gt;Want to build a web server but don&amp;rsquo;t know how to start ?? We will be showing a step by step procedure from installation to configuration of server by using &lt;a href=&#34;https://github.com/gorilla/mux&#34;&gt;Gorilla Mux Library&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Setup Redis On Window</title>
+      <link>https://jeffdevslife.com/post/setup-redis/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffdevslife.com/post/setup-redis/</guid>
+      <description>&lt;p&gt;In this article, we will show how to install and configure Redis on Window, We will be setting up the redis server, install Redis Desktop Manager as GUI&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

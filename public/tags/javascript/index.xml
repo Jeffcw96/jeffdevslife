@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascript on Jeff&#39;s Blog</title>
+    <link>https://jeffdevslife.com/tags/javascript/</link>
+    <description>Recent content in javascript on Jeff&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2020, Jeff&#39;s all rights reserved.</copyright>
+    <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jeffdevslife.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Password Detector</title>
+      <link>https://jeffdevslife.com/post/password-detector/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffdevslife.com/post/password-detector/</guid>
+      <description>&lt;p&gt;In this article, we will create an interative password input and use Regular Expression for validation.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
