@@ -15,7 +15,7 @@ function createEl(element = 'div') {
   return document.createElement(element);
 }
 
-function elem(selector, parent = document){
+function elem(selector, parent = document) {
   let elem = parent.querySelector(selector);
   return elem != false ? elem : false;
 }
@@ -33,17 +33,17 @@ function pushClass(el, targetClass) {
 }
 
 function hasClasses(el) {
-  if(isObj(el)) {
+  if (isObj(el)) {
     const classes = el.classList;
     return classes.length
   }
 }
 
-(function markInlineCodeTags(){
+(function markInlineCodeTags() {
   const codeBlocks = elems('code');
-  if(codeBlocks) {
-    codeBlocks.forEach(function(codeBlock){
-      hasClasses(codeBlock) ? false: pushClass(codeBlock, 'noClass');
+  if (codeBlocks) {
+    codeBlocks.forEach(function (codeBlock) {
+      hasClasses(codeBlock) ? false : pushClass(codeBlock, 'noClass');
     });
   }
 })();
@@ -63,7 +63,7 @@ function modifyClass(el, targetClass) {
 }
 
 function containsClass(el, targetClass) {
-  if (isObj(el) && targetClass && el !== document ) {
+  if (isObj(el) && targetClass && el !== document) {
     return el.classList.contains(targetClass) ? true : false;
   }
 }
@@ -99,9 +99,9 @@ function isBlank(str) {
 }
 
 function isMatch(element, selectors) {
-  if(isObj(element)) {
-    if(selectors.isArray) {
-      let matching = selectors.map(function(selector){
+  if (isObj(element)) {
+    if (selectors.isArray) {
+      let matching = selectors.map(function (selector) {
         return element.matches(selector)
       })
       return matching.includes(true);
@@ -130,34 +130,32 @@ function copyToClipboard(str) {
   }
 }
 
-function loadSvg(file, parent, path = 'icons/') {
-  const link = `${parentURL}${path}${file}.svg`;
-  fetch(link)
-  .then((response) => {
-    return response.text();
-  })
-  .then((data) => {
-    parent.innerHTML = data;
-  });
+function loadSvg(file, parent, path = '/icons/') {
+  const link = `${path}${file}.svg`;
+  var svgIcon = document.createElement('img');
+  svgIcon.src = link;
+  svgIcon.style.filter = "grayscale(100%)";
+  parent.appendChild(svgIcon);
+
 }
 
 function getMobileOperatingSystem() {
   let userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  
+
   if (/android/i.test(userAgent)) {
     return "Android";
   }
-  
+
   if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
     return "iOS";
   }
-  
+
   return "unknown";
 }
 
 function horizontalSwipe(element, func, direction) {
   // call func if result of swipeDirection() 👇🏻 is equal to direction
-  
+
   let touchstartX = 0;
   let touchendX = 0;
   let swipeDirection = null;
@@ -191,10 +189,10 @@ function parseBoolean(string) {
   }
 };
 
-(function() {
+(function () {
   const bodyElement = elem('body');
   const platform = navigator.platform.toLowerCase();
-  if(platform.includes("win")) {
+  if (platform.includes("win")) {
     pushClass(bodyElement, 'windows');
   }
 })();

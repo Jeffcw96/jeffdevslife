@@ -6,10 +6,21 @@
     <description>Recent content in javascript on Jeff&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Jeff&#39;s all rights reserved.</copyright>
-    <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jeffdevslife.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>XMLHttpRequest vs Fetch API</title>
+      <link>https://jeffdevslife.com/post/xhr-fetch/</link>
+      <pubDate>Fri, 25 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffdevslife.com/post/xhr-fetch/</guid>
+      <description>In this article, we will have a simple comparison on the XMLHttpRequest code and Fetch API code.
+XMLHttpRequest(XHR) objects are used to interact with servers, it uses the concept of AJAX where we can retrieve the data from a URL or backend without having to do a full-page refresh.
+In this case, I will be using JSON object as my Request Payload. It&amp;rsquo;s gonna something like this. 1var jsonObj = {}; 2jsonObj.</description>
+    </item>
     
     <item>
       <title>Password Detector</title>
