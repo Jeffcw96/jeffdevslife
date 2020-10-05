@@ -1,25 +1,25 @@
-(function toggleColorModes(){
+(function toggleColorModes() {
   const light = 'lit';
   const dark = 'dim';
   const storageKey = 'colorMode';
   const key = '--color-mode';
   const data = 'data-mode';
   const bank = window.localStorage;
-  
+
   function currentMode() {
     let acceptableChars = light + dark;
     acceptableChars = [...acceptableChars];
     let mode = getComputedStyle(doc).getPropertyValue(key).replace(/\"/g, '').trim();
-    
-    mode = [...mode].filter(function(letter){
+
+    mode = [...mode].filter(function (letter) {
       return acceptableChars.includes(letter);
     });
-    
+
     return mode.join('');
   }
-  
+
   function changeMode(isDarkMode) {
-    if(isDarkMode) {
+    if (isDarkMode) {
       bank.setItem(storageKey, light)
       elemAttribute(doc, data, light);
     } else {
@@ -27,156 +27,155 @@
       elemAttribute(doc, data, dark);
     }
   }
-  
+
   function setUserColorMode(mode = false) {
     const isDarkMode = currentMode() == dark;
     const storedMode = bank.getItem(storageKey);
-    if(storedMode) {
-      if(mode) {
+    if (storedMode) {
+      if (mode) {
         changeMode(isDarkMode);
       } else {
         elemAttribute(doc, data, storedMode);
       }
     } else {
-      if(mode === true) {
-        changeMode(isDarkMode) 
+      if (mode === true) {
+        changeMode(isDarkMode)
       }
     }
   }
-  
+
   setUserColorMode();
-  
-  doc.addEventListener('click', function(event) {
+
+  doc.addEventListener('click', function (event) {
     let target = event.target;
     let modeClass = 'color_choice';
     let animateClass = 'color_animate';
     let isModeToggle = containsClass(target, modeClass);
-    if(isModeToggle) {
+    if (isModeToggle) {
       pushClass(target, animateClass);
-      setUserColorMode(true);        
+      setUserColorMode(true);
     }
   });
 })();
 
-function fileClosure(){ 
+function fileClosure() {
   // everything in this file should be declared within this closure (function).
-  
+
   (function updateDate() {
     var date = new Date();
     var year = date.getFullYear();
     elem('.year').innerHTML = year;
   })();
-  
-  (function makeExternalLinks(){
+
+  (function makeExternalLinks() {
     let links = elems('a');
-    if(links) {
-      Array.from(links).forEach(function(link){
+    if (links) {
+      Array.from(links).forEach(function (link) {
         let target, rel, blank, noopener, attr1, attr2, url, isExternal;
         url = elemAttribute(link, 'href');
         isExternal = (url && typeof url == 'string' && url.startsWith('http')) && !url.startsWith(parentURL) ? true : false;
-        if(isExternal) {
+        if (isExternal) {
           target = 'target';
           rel = 'rel';
           blank = '_blank';
           noopener = 'noopener';
           attr1 = elemAttribute(link, target);
           attr2 = elemAttribute(link, noopener);
-          
+
           attr1 ? false : elemAttribute(link, target, blank);
           attr2 ? false : elemAttribute(link, rel, noopener);
         }
       });
     }
   })();
-  
+
   let headingNodes = [], results, link, icon, current, id,
-  tags = ['h2', 'h3', 'h4', 'h5', 'h6'];
-  
+    tags = ['h2', 'h3', 'h4', 'h5', 'h6'];
+
   current = document.URL;
-  
-  tags.forEach(function(tag){
+
+  tags.forEach(function (tag) {
     const article = elem('.post_content');
     if (article) {
       results = article.getElementsByTagName(tag);
       Array.prototype.push.apply(headingNodes, results);
     }
   });
-  
-  headingNodes.forEach(function(node){
+
+  headingNodes.forEach(function (node) {
     link = createEl('a');
     loadSvg('link', link);
     link.className = 'link icon';
     id = node.getAttribute('id');
-    if(id) {
+    if (id) {
       link.href = `${current}#${id}`;
       node.appendChild(link);
       pushClass(node, 'link_owner');
     }
   });
-  
+
   let inlineListItems = elems('ol li');
-  if(inlineListItems) {
-    inlineListItems.forEach(function(listItem){
+  if (inlineListItems) {
+    inlineListItems.forEach(function (listItem) {
       let firstChild = listItem.children[0]
       let containsHeading = isMatch(firstChild, tags);
       containsHeading ? pushClass(listItem, 'align') : false;
     })
   }
-  
+
   function copyFeedback(parent) {
     const copyText = document.createElement('div');
     const yanked = 'link_yanked';
     copyText.classList.add(yanked);
     copyText.innerText = 'Link Copied';
-    if(!elem(`.${yanked}`, parent)) {
+    if (!elem(`.${yanked}`, parent)) {
       parent.appendChild(copyText);
-      setTimeout(function() { 
+      setTimeout(function () {
         parent.removeChild(copyText)
       }, 3000);
     }
   }
-  
+
   (function copyHeadingLink() {
     let deeplink, deeplinks, newLink, parent, target;
     deeplink = 'link';
     deeplinks = elems(`.${deeplink}`);
-    if(deeplinks) {
-      document.addEventListener('click', function(event)
-      {
+    if (deeplinks) {
+      document.addEventListener('click', function (event) {
         target = event.target;
         parent = target.parentNode;
         if (target && containsClass(target, deeplink) || containsClass(parent, deeplink)) {
           event.preventDefault();
           newLink = target.href != undefined ? target.href : target.parentNode.href;
           copyToClipboard(newLink);
-          target.href != undefined ?  copyFeedback(target) : copyFeedback(target.parentNode);
+          target.href != undefined ? copyFeedback(target) : copyFeedback(target.parentNode);
         }
       });
     }
   })();
 
   (function copyLinkToShare() {
-    let  copy, copied, excerpt, isCopyIcon, isInExcerpt, link, postCopy, postLink, target;
+    let copy, copied, excerpt, isCopyIcon, isInExcerpt, link, postCopy, postLink, target;
     copy = 'copy';
     copied = 'copy_done';
     excerpt = 'excerpt';
     postCopy = 'post_copy';
     postLink = 'post_card';
-    
-    doc.addEventListener('click', function(event) {
+
+    doc.addEventListener('click', function (event) {
       target = event.target;
       isCopyIcon = containsClass(target, copy);
       let isWithinCopyIcon = target.closest(`.${copy}`);
       if (isCopyIcon || isWithinCopyIcon) {
         let icon = isCopyIcon ? isCopyIcon : isWithinCopyIcon;
-        isInExcerpt =  containsClass(icon, postCopy);
+        isInExcerpt = containsClass(icon, postCopy);
         if (isInExcerpt) {
           link = target.closest(`.${excerpt}`).previousElementSibling;
-          link = containsClass(link, postLink)? elemAttribute(link, 'href') : false;
+          link = containsClass(link, postLink) ? elemAttribute(link, 'href') : false;
         } else {
           link = window.location.href;
         }
-        if(link) {
+        if (link) {
           copyToClipboard(link);
           pushClass(icon, copied);
         }
@@ -184,159 +183,159 @@ function fileClosure(){
       const yankLink = '.link_yank';
       const isCopyLink = target.matches(yankLink);
       const isCopyLinkIcon = target.closest(yankLink);
-      
-      if(isCopyLink || isCopyLinkIcon) {
+
+      if (isCopyLink || isCopyLinkIcon) {
         event.preventDefault();
         const yankContent = isCopyLinkIcon ? elemAttribute(target.closest(yankLink), 'href') : elemAttribute(target, 'href');
         copyToClipboard(yankContent);
-        isCopyLink ?  copyFeedback(target) : copyFeedback(target.parentNode);
+        isCopyLink ? copyFeedback(target) : copyFeedback(target.parentNode);
       }
-      
+
     });
   })();
-  
-  (function hideAside(){
+
+  (function hideAside() {
     let aside, title, posts;
     aside = elem('.aside');
     title = aside ? aside.previousElementSibling : null;
-    if(aside && title.nodeName.toLowerCase() === 'h3') {
+    if (aside && title.nodeName.toLowerCase() === 'h3') {
       posts = Array.from(aside.children);
       posts.length < 1 ? title.remove() : false;
     }
   })();
-  
+
   (function goBack() {
     let backBtn = elem('.btn_back');
     let history = window.history;
     if (backBtn) {
-      backBtn.addEventListener('click', function(){
+      backBtn.addEventListener('click', function () {
         history.back();
       });
     }
   })();
-  
-  function showingImagePosition(){
+
+  function showingImagePosition() {
     // whether or not to track image position for non-linear images within the article body element.
     const thisPage = document.documentElement;
     let showImagePositionOnPage = thisPage.dataset.figures;
-    
-    if(showImagePositionOnPage) {
+
+    if (showImagePositionOnPage) {
       showImagePosition = showImagePositionOnPage;
     }
     return showImagePosition === "true" ? true : false;
   }
-  
+
   function populateAlt(images) {
     let imagePosition = 0;
-    
+
     images.forEach((image) => {
       let alt = image.alt;
       image.loading = "lazy";
       const modifiers = [':left', ':right'];
       const altArr = alt.split('::').map(x => x.trim())
 
-      altArr[1]?.split(' ').filter(Boolean).forEach(cls =>{
+      altArr[1]?.split(' ').filter(Boolean).forEach(cls => {
         pushClass(image, cls);
         alt = altArr[0]
       })
 
-      modifiers.forEach(function(modifier){
+      modifiers.forEach(function (modifier) {
         const canModify = alt.includes(modifier);
-        if(canModify) {
+        if (canModify) {
           pushClass(image, `float_${modifier.replace(":", "")}`);
-          
+
           alt = alt.replace(modifier, "");
         }
       });
 
       const isInline = alt.includes(inline);
       alt = alt.replace(inline, "");
-      
+
       // wait for position to load and a caption if the image is not online and has an alt attribute
       if (alt.length > 0 && !containsClass(image, 'alt' && !isInline)) {
         imagePosition += 1;
         image.dataset.pos = imagePosition;
-        image.addEventListener('load', function() {
+        image.addEventListener('load', function () {
           const showImagePosition = showingImagePosition();
-          
-          let desc = document.createElement('p');
-          desc.classList.add('img_alt');
-          let imageAlt = alt;
-          
-          const thisImgPos = image.dataset.pos;
-          // modify image caption is necessary
-          imageAlt = showImagePosition ? `${showImagePositionLabel} ${thisImgPos}: ${imageAlt}` : imageAlt;
-          desc.textContent = imageAlt;
-          image.insertAdjacentHTML('afterend', desc.outerHTML);
+
+          // let desc = document.createElement('p');
+          // desc.classList.add('img_alt');
+          // let imageAlt = alt;
+
+          // const thisImgPos = image.dataset.pos;
+          // // modify image caption is necessary
+          // imageAlt = showImagePosition ? `${showImagePositionLabel} ${thisImgPos}: ${imageAlt}` : imageAlt;
+          // desc.textContent = imageAlt;
+          // image.insertAdjacentHTML('afterend', desc.outerHTML);
         })
       }
-      
-      if(isInline) {
+
+      if (isInline) {
         modifyClass(image, 'inline');
       }
-      
+
     });
-    
+
     hljs.initHighlightingOnLoad();
   }
-  
+
   function largeImages(baseParent, images = []) {
-    if(images) {
-      images.forEach(function(image) {
-        
-        image.addEventListener('load', function(){
-          
+    if (images) {
+      images.forEach(function (image) {
+
+        image.addEventListener('load', function () {
+
           let actualWidth = image.naturalWidth;
-          
+
           let parentWidth = baseParent.offsetWidth;
-          
+
           let actionableRatio = actualWidth / parentWidth;
-          
+
           if (actionableRatio > 1) {
             pushClass(image, "image-scalable");
             image.dataset.scale = actionableRatio;
             let figure = createEl('figure');
-            
+
             wrapEl(image, figure)
           }
-          
+
         });
       })
     }
   }
-  
+
   (function AltImage() {
     let post = elem('.post_content');
     let images = post ? post.querySelectorAll('img') : false;
     images ? populateAlt(images) : false;
     largeImages(post, images);
   })();
-  
-  
-  doc.addEventListener('click', function(event) {
+
+
+  doc.addEventListener('click', function (event) {
     let target = event.target;
     isClickableImage = target.matches('.image-scalable');
-    
+
     let isFigure = target.matches('figure');
-    
-    if(isFigure) {
+
+    if (isFigure) {
       let hasClickableImage = containsClass(target.children[0], 'image-scalable');
-      if(hasClickableImage) {
+      if (hasClickableImage) {
         modifyClass(target, 'image-scale');
       }
     }
-    
-    if(isClickableImage) {
+
+    if (isClickableImage) {
       let figure = target.parentNode;
       modifyClass(figure, 'image-scale');
     }
-    
+
   });
-  
+
   const tables = elems('table');
   if (tables) {
     const scrollable = 'scrollable';
-    tables.forEach(function(table) {
+    tables.forEach(function (table) {
       const wrapper = createEl();
       wrapper.className = scrollable;
       wrapEl(table, wrapper);
@@ -345,7 +344,7 @@ function fileClosure(){
 
   // track if there's an expanded tags' widget
   let tagWidgetOpen = false;
-    
+
   function toggleTags(target = null) {
     const tagsButtonClass = 'post_tags_toggle';
     const tagsButtonClass2 = 'tags_hide';
@@ -355,14 +354,14 @@ function fileClosure(){
     const showingAllTags = target.matches(`.${tagsShowClass}`);
     const isExandButton = target.matches(`.${tagsButtonClass}`);
     const isCloseButton = target.matches(`.${tagsButtonClass2}`) || target.closest(`.${tagsButtonClass2}`);
-    const isButton =  isExandButton || isCloseButton;
+    const isButton = isExandButton || isCloseButton;
     const isActionable = isButton || showingAllTags;
-    
-    if(isActionable) {
-      if(isButton) {
-        if(isExandButton) {
-          let allTagsWrapper = target.nextElementSibling 
-          pushClass(allTagsWrapper, tagsShowClass); 
+
+    if (isActionable) {
+      if (isButton) {
+        if (isExandButton) {
+          let allTagsWrapper = target.nextElementSibling
+          pushClass(allTagsWrapper, tagsShowClass);
         } else {
           deleteClass(postTagsWrapper, tagsShowClass);
         }
@@ -371,67 +370,67 @@ function fileClosure(){
       }
     }
   }
-  
-  (function showAllPostTags(){
-    doc.addEventListener('click', function(event){
+
+  (function showAllPostTags() {
+    doc.addEventListener('click', function (event) {
       const target = event.target;
       toggleTags(target)
     });
-    
+
     horizontalSwipe(doc, toggleTags, 'left');
   })();
-  
+
   (function navToggle() {
-    doc.addEventListener('click', function(event){
+    doc.addEventListener('click', function (event) {
       const target = event.target;
       const open = 'jsopen';
       const navCloseIconClass = '.nav_close';
       const navClose = elem(navCloseIconClass);
       const isNavToggle = target.matches(navCloseIconClass) || target.closest(navCloseIconClass);
       const harmburgerIcon = navClose.firstElementChild.firstElementChild;
-      if(isNavToggle) {
+      if (isNavToggle) {
         event.preventDefault();
         modifyClass(doc, open);
         modifyClass(harmburgerIcon, 'isopen');
       }
-      
-      if(!target.closest('.nav') && elem(`.${open}`)) {
+
+      if (!target.closest('.nav') && elem(`.${open}`)) {
         modifyClass(doc, open);
         let navIsOpen = containsClass(doc, open);
-        !navIsOpen  ? modifyClass(harmburgerIcon, 'isopen') : false;
+        !navIsOpen ? modifyClass(harmburgerIcon, 'isopen') : false;
       }
-      
+
       const navItem = 'nav_item';
       const navSub = 'nav_sub';
       const showSub = 'nav_open';
       const isNavItem = target.matches(`.${navItem}`);
       const isNavItemIcon = target.closest(`.${navItem}`)
-      
-      if(isNavItem || isNavItemIcon) {
+
+      if (isNavItem || isNavItemIcon) {
         const thisItem = isNavItem ? target : isNavItemIcon;
         const hasNext = thisItem.nextElementSibling
         const hasSubNav = hasNext ? hasNext.matches(`.${navSub}`) : null;
         if (hasSubNav) {
           event.preventDefault();
           modifyClass(thisItem, showSub);
-        } 
+        }
       }
-      
+
     });
   })();
 
   function isMobileDevice() {
     const agent = navigator.userAgent.toLowerCase();
     const isMobile = agent.includes('android') || agent.includes('iphone');
-    return  isMobile;
+    return isMobile;
   };
 
-  (function ifiOS(){
+  (function ifiOS() {
     // modify backto top button
     const backToTopButton = elem('.to_top');
     const thisOS = getMobileOperatingSystem();
     const ios = 'ios';
-    if(backToTopButton && thisOS === 'iOS') {
+    if (backToTopButton && thisOS === 'iOS') {
       pushClass(backToTopButton, ios);
     }
     // precisely position back to top button on large screens
@@ -440,22 +439,22 @@ function fileClosure(){
     let leftOffset = (docWidth - buttonParentWidth) / 2;
     const buttonWidth = backToTopButton.offsetWidth;
     leftOffset = leftOffset + buttonParentWidth - buttonWidth;
-    if(!isMobileDevice()){
+    if (!isMobileDevice()) {
       backToTopButton.style.left = `${leftOffset}px`;
-    } 
+    }
   })();
 
   (function sortTags() {
-    doc.addEventListener('click', function(event){
+    doc.addEventListener('click', function (event) {
       const active = 'active';
       const target = event.target;
       const isSortButton = target.matches('.tags_sort') || target.matches('.tags_sort span');
-      if(isSortButton) {
+      if (isSortButton) {
         const tagsList = target.closest('.tags_list');
         const sortButton = elem('.tags_sort', tagsList);
         modifyClass(sortButton, 'sorted');
         const tags = elems('.post_tag', tagsList);
-        Array.from(tags).forEach(function(tag){
+        Array.from(tags).forEach(function (tag) {
           const order = tag.dataset.position;
           const reverseSorting = containsClass(tag, active);
           tag.style.order = reverseSorting ? 0 : -order;

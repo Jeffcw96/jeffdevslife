@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Jeff&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Jeff&#39;s all rights reserved.</copyright>
-    <lastBuildDate>Fri, 25 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jeffdevslife.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Binary Search Tree</title>
+      <link>https://jeffdevslife.com/post/binary-search-tree/</link>
+      <pubDate>Mon, 05 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffdevslife.com/post/binary-search-tree/</guid>
+      <description>Unlike array or linked list which are linear, Binary Search Tree (BST) is constructed in a non-linear form.
+Each element inside the BST is called node. It has 2 information from the node which are the current value and pointer that pointing to the next node or their child node. Usually the very first node is known as ROOT and the following will be child node.
+There are some rules about this algorithm that is the node pointing from left will be the smaller value node while the node pointing from the right will be the larger value node.</description>
+    </item>
     
     <item>
       <title>XMLHttpRequest vs Fetch API</title>
