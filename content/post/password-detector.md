@@ -1,6 +1,6 @@
 +++
 author = "Jeff Chang"
-title= "Password Detector" 
+title= "Password Strength Detector" 
 date= "2020-09-11"
 description= "Use Javascript Reges to validate the strengthness of password" 
 tags = [
@@ -78,7 +78,7 @@ Since now we have a parent which contains the **relative position**, we can now 
 
 Let's take a look on our current result. 
 <div>
-    <img src="/images/pw_detector_01.jpg">
+    <img src="/images/pw_detector_01.jpg" alt="password final layout">
 </div>
 
 Before we dive in to the javascript function, let's assume what are condition we want to handle for the password detection.
@@ -129,7 +129,7 @@ passwordStrengthBar.style.width = score + "%";
 
 That's It !!. we build the interactive password detector. 
 <div>
-    <img src="/images/pw_detector_02.gif">
+    <img src="/images/pw_detector_02.gif" alt="real-time password strength detector">
 </div>
 
 For further action such as password submission, we don't want to create so many of if statement again right??

@@ -104,20 +104,20 @@ I also used **Go** to serve my static file in localhost for this testing purpose
 
 First and foremost, We may open the the developer tool by going to *Setting* > *More Tools* > *Developer tools*. **OR** we can simply click **F12** as a shortcut key to enter the developer tools.
 
-![](/images/xhr_fetch_01.png)
+![Developer tools](/images/xhr_fetch_01.png)
 
 Next, we can go to the Network Tab and here we can see our static file such as HTML, CSS and javascript and images here. As sometimes the response might have more than 15 or 20 which will then makes you difficult to see your desired reponse. So we can first clear the network log before we observe our desire response.
 
-![](/images/xhr_fetch_02.png)
+![Network activity](/images/xhr_fetch_02.png)
 
 And now we make an POST request to the backend, and it returns a response to us as well.
 As you can see there are several things we can observe here such as Request Name, URL, status Code, and much more. We can easily debug our problem based on these information. For example when we see the status code is 404 *(Not found)*, we might check with our request URL to see whether it has matched with the correct URL, if the status code is 405 *(Method Not Allow)*, we can check the request method is not matched with the backend and etc.
 
-![](/images/xhr_fetch_03.png)
+![Request payload, response](/images/xhr_fetch_03.png)
 
 The response data/ information also can be found in the response tab .
 
-![](/images/xhr_fetch_04.png)
+![response preview](/images/xhr_fetch_04.png)
 
 
 

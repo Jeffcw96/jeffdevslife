@@ -156,5 +156,5 @@ min = () => {
 
 It’s pretty straight forward for finding the **Minimum** value of the tree as well. We will now keep dive into the left node and return the final node as the smallest value node.
 
-
+[Check full code here](https://github.com/Jeffcw96/Binary-Search-Tree)
 
