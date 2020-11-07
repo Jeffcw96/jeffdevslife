@@ -36,7 +36,7 @@
   
   <link rel="preload" href="https://jeffdevslife.com/css/styles.8c77cda9454d30afb96a03bf232ee1089eb4b0da2a7c6e7f2b2a09d6cfcf2fe97836d9edfca70365fb630563fff409fd484299df18ca05a2950108d46da3cf1e.css" integrity="sha512-jHfNqUVNMK&#43;5agO/Iy7hCJ60sNoqfG5/KyoJ1s/PL&#43;l4Ntnt/KcDZftjBWP/9An9SEKZ3xjKBaKVAQjUbaPPHg==" as="style"
     crossorigin="anonymous">
-  <link rel="preload" href="https://jeffdevslife.com/js/bundle.0c0e34cf209ed880f66a8ef027ee705c0e4da2573b75a9a5625e22068082c6072c494273110cc8fe1f728ee98d92f2db3f05934ab43f54b99abb3f7f3d6eb30b.js" as="script" integrity="sha512-DA40zyCe2ID2ao7wJ&#43;5wXA5Nolc7damlYl4iBoCCxgcsSUJzEQzI/h9yjumNkvLbPwWTSrQ/VLmauz9/PW6zCw=="
+  <link rel="preload" href="https://jeffdevslife.com/js/bundle.23ae821781504c20995552d35ebe4e187142524d0838b5c600161846c520923962e9131b598c38a99eba72daf9b38eee945fb9f13d1c5dc4c887c7e5d3b57a41.js" as="script" integrity="sha512-I66CF4FQTCCZVVLTXr5OGHFCUk0IOLXGABYYRsUgkjli6RMbWYw4qZ66ctr5s47ulF&#43;58T0cXcTIh8fl07V6QQ=="
     crossorigin="anonymous">
 
   
@@ -48,7 +48,7 @@
 
 
 
-<body data-code="15" data-lines="false" id="documentTop">
+<body data-code="1" data-lines="false" id="documentTop">
 
 <header class='nav_header'>
   <nav class='nav'>
@@ -109,19 +109,19 @@
     
     
     <p>Want to build a web server but don&rsquo;t know how to start ?? We will be showing a step by step procedure from installation to configuration of server by using <a href="https://github.com/gorilla/mux">Gorilla Mux Library</a></p>
-<hr>
+<h2 id="heading"></h2>
 <p><a href="https://github.com/gorilla/mux"></a> will be used for serving the router. First, we need to import the library to our web application.</p>
 <img src="/images/golang_server_01.png">
 <p>We can now initialize our router</p>
 <p><img src="/images/golang_server_02.png" alt=""></p>
-<p>Mux router will execute the function respectively whenever the request is matched with the URL. Example below showing a simple <strong>POST</strong> request with gorilla mux, when the request path is matched with the URL <strong>(“/getProductDetails”)</strong> The <strong>GetProductDetails</strong> function will be executed. We will discuss more on how we can response back to the front end and other Methods such as <em>“GET, OPTIONS, PUT, DELETE”</em>.</p>
+<p>Mux router will execute the function respectively whenever the request is matched with the end point. Example below showing a simple <strong>POST</strong> request with gorilla mux, when the request path is matched with the end point <strong>(“/getProductDetails”)</strong> The <strong>GetProductDetails</strong> function will be executed. We will discuss more on how we can response back to the front end and other Methods such as <em>“GET, OPTIONS, PUT, DELETE”</em>.</p>
 <p><img src="/images/golang_server_03.png" alt="">
 <img src="/images/golang_server_04.png" alt=""></p>
 <p>Before we start to serve our serve, we need to create a homepage for it. We can use template from golang to serve a HTML template so that when we visit our server, this particular HTML file will be served and displayed. We can create a folder which will hold all template file.</p>
 <p><img src="/images/golang_server_05.png" alt="index.html"></p>
 <p>Next, we will import the template library and create a variable for storing the html template.</p>
 <p><img src="/images/golang_server_06.png" alt=":inline"> <img src="/images/golang_server_07.png" alt=":inline"></p>
-<p>We can now parse the html template file into our variable and serve as our website home page. As we only serve one html file for our template, So we can use template.ParseFiles. In case there are many template file to serve, we can use template.ParseGlob to point to the file directiory. The URL <strong>“/”</strong> means our home page. For example, we set our local host server in port <strong>8080</strong>. Then when we visit that page, the <strong>index.html</strong> will be served.</p>
+<p>We can now parse the html template file into our variable and serve as our website home page. As we only serve one html file for our template, So we can use template.ParseFiles. In case there are many template file to serve, we can use template.ParseGlob to point to the file directiory. The end point <strong>“/”</strong> means our home page. For example, we set our local host server in port <strong>8080</strong>. Then when we visit that page, the <strong>index.html</strong> will be served.</p>
 <p><img src="/images/golang_server_08.png" alt=""></p>
 <p><img src="/images/golang_server_09.png" alt=""></p>
 <p>Finally, we can start and serve our server.</p>
@@ -143,6 +143,15 @@
     <ul class="flex-column">
       
       <li>
+        <a href="https://jeffdevslife.com/post/promise/" class="nav-link">Promise</a>
+      </li>
+      <li>
+        <a href="https://jeffdevslife.com/post/destructuring-array-object/" class="nav-link">ES6 Destructuring Array and Object</a>
+      </li>
+      <li>
+        <a href="https://jeffdevslife.com/post/json/" class="nav-link">Passing JSON from Front-end to Backend</a>
+      </li>
+      <li>
         <a href="https://jeffdevslife.com/post/cookie/" class="nav-link">Cookie</a>
       </li>
       <li>
@@ -154,9 +163,6 @@
       <li>
         <a href="https://jeffdevslife.com/post/password-detector/" class="nav-link">Password Strength Detector</a>
       </li>
-      <li>
-        <a href="https://jeffdevslife.com/post/setup-redis/" class="nav-link">Setup Redis On Window</a>
-      </li>
     </ul>
     
     
@@ -166,7 +172,13 @@
         <a href='https://jeffdevslife.com/tags/javascript/'
           class=" post_tag button button_translucent">
           JAVASCRIPT
-          <span class='button_tally'>4</span>
+          <span class='button_tally'>7</span>
+        </a>
+        
+        <a href='https://jeffdevslife.com/tags/golang/'
+          class=" post_tag button button_translucent">
+          GOLANG
+          <span class='button_tally'>2</span>
         </a>
         
         <a href='https://jeffdevslife.com/tags/algorithm-data-structure/'
@@ -178,12 +190,6 @@
         <a href='https://jeffdevslife.com/tags/css/'
           class=" post_tag button button_translucent">
           CSS
-          <span class='button_tally'>1</span>
-        </a>
-        
-        <a href='https://jeffdevslife.com/tags/golang/'
-          class=" post_tag button button_translucent">
-          GOLANG
           <span class='button_tally'>1</span>
         </a>
         
@@ -281,7 +287,7 @@
 
   </div>
 </footer>
-  <script type="text/javascript" src="https://jeffdevslife.com/js/bundle.0c0e34cf209ed880f66a8ef027ee705c0e4da2573b75a9a5625e22068082c6072c494273110cc8fe1f728ee98d92f2db3f05934ab43f54b99abb3f7f3d6eb30b.js" integrity="sha512-DA40zyCe2ID2ao7wJ&#43;5wXA5Nolc7damlYl4iBoCCxgcsSUJzEQzI/h9yjumNkvLbPwWTSrQ/VLmauz9/PW6zCw=="
+  <script type="text/javascript" src="https://jeffdevslife.com/js/bundle.23ae821781504c20995552d35ebe4e187142524d0838b5c600161846c520923962e9131b598c38a99eba72daf9b38eee945fb9f13d1c5dc4c887c7e5d3b57a41.js" integrity="sha512-I66CF4FQTCCZVVLTXr5OGHFCUk0IOLXGABYYRsUgkjli6RMbWYw4qZ66ctr5s47ulF&#43;58T0cXcTIh8fl07V6QQ=="
     crossorigin="anonymous"></script>
 </body>
 

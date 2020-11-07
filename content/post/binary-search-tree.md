@@ -6,6 +6,7 @@ description = "Binary Search Tree"
 tags = [
     "javascript","algorithm & data-structure"
 ]
+keywords = "data-structure, algorithm, binary search tree, javascript, class, ES6, OOP"
 +++
 
 <img src="/images/tree.jpg" style="max-width:80%; display:block">

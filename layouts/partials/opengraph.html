@@ -2,6 +2,7 @@
 {{- with .Params.description }}
   {{- $summary = (. | truncate 160) }}
 {{- end }}
+{{- $keywords := .Params.keywords}}
 {{- $site := .Site.Title }}
 {{- $title := .Title }}
 {{- $params := .Site.Params }}
@@ -28,6 +29,7 @@
 <meta property="og:type" content="article">
 {{- end }}
 <meta name="description" content="{{ $summary }}">
+<meta name="keywords" content="{{ $keywords }}">
 <meta name = "twitter:card" content = "{{ if $params.largeTwitterCard }}summary_large_image{{ else }}summary{{ end }}" />
 <meta name = "twitter:creator" content = "{{ $params.twitter }}">
 <meta name = "twitter:title" content = "{{ .Title }}" />

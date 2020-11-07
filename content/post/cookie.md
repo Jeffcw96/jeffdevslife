@@ -6,6 +6,7 @@ description= "How to use Cookie, what is the benefit of using cookie"
 tags = [
   "javascript",
 ]
+keywords= "cookies, Set Cookie, Get Cookie, Cookie Expiry, Cookie Path, Cookie Domain, Cookie Secure"
 +++
 
 Cookies are usually small text files, given ID tags that are stored on your computer's browser directory or program data subfolders.
@@ -27,6 +28,7 @@ function setCookie(cName, cValue, days) {
 }
 {{< /highlight >}}
 We have now created a function to set a cookie. Let's try it out on our browser. *p/s I'm using live server extension in visual studo code to serve our file in local server*
+
 ![set cookie](/images/cookie1.JPG)
 
 We can check our cookie data by heading to *developer tools(F12) => Application => Cookies => your domain*

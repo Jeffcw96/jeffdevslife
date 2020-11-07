@@ -6,6 +6,7 @@ description = "Guide to setup redis on window"
 tags = [
     "redis",
 ]
+keywords = "Redis, Redis Desktop Manager"
 +++
 
 In this article, we will show how to install and configure Redis on Window, We will be setting up the redis server, install Redis Desktop Manager as GUI 

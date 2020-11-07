@@ -6,6 +6,7 @@ description = "XMLHttpRequest vs Fetch API"
 tags = [
     "javascript",
 ]
+keywords = "Front-end, API Request, Fetch API, XHR Request"
 +++
 
 In this article, we will have a simple comparison on the XMLHttpRequest code and Fetch API code.
@@ -58,6 +59,8 @@ And the final step is send the request !!!
 // send rquest with JSON payload
 xhr.send(JSON.stringify(jsonObj));
 {{< /highlight >}}
+
+## Fetch API
 
 On the other hand, **Fetch** is a new API provides more flexibility and easier to use that doing similar things with XHR request. Fetch return promises that resolves to the Response to that request no matter it is successful or not. 
 

@@ -15,6 +15,7 @@ figurePositionShow: true # Override global value for showing the figure label.
 tags:
   - Tag_name1
   - Tag_name2
+keywords: "keyword1, keyword2"
 ---
 
 **Insert Lead paragraph here.**
