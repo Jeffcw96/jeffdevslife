@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Jeff&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Jeff&#39;s all rights reserved.</copyright>
-    <lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jeffdevslife.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Redis Hash</title>
+      <link>https://jeffdevslife.com/post/redis-hash/</link>
+      <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffdevslife.com/post/redis-hash/</guid>
+      <description>Redis Hashes are maps between string fields and string values (key-value pair), so they are the perfect data type to represent objects.
+It will be useful for store multiple data that come from an object such as Customer and inside Customer object we have their Name, Age, Address and other info.
+Because Redis isn&amp;rsquo;t like some of the SQL or NO-SQL languages that will auto generate ID when we create the instance or model.</description>
+    </item>
     
     <item>
       <title>Promise</title>

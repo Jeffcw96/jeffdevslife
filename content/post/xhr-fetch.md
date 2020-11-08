@@ -6,7 +6,7 @@ description = "XMLHttpRequest vs Fetch API"
 tags = [
     "javascript",
 ]
-keywords = "Front-end, API Request, Fetch API, XHR Request"
+metakeywords = "Front-end, API Request, Fetch API, XHR Request"
 +++
 
 In this article, we will have a simple comparison on the XMLHttpRequest code and Fetch API code.

@@ -6,7 +6,7 @@ description = "Build your very first golang server"
 tags = [
     "golang",
 ]
-keywords = "Golang, Server"
+metakeywords = "Golang, Server"
 codeMaxLines = 1
 +++
 

@@ -6,7 +6,7 @@ description = "full stack process, passing json from browser to server, golang j
 tags = [
     "javascript","golang"
 ]
-keywords = "Javascript, Golang, JSON, Fetch API, Destructure JSON"
+metakeywords = "Javascript, Golang, JSON, Fetch API, Destructure JSON"
 +++
 
 In this article, we will be passing json data from browser to our backend server. We will then use GO to handle the data that send from front end. There are few things that you might interested to know before you start following this tutorial which is send data via [Fetch API](/post/xhr-fetch/) and [Backend Server with Golang](/post/setup-go-server/).

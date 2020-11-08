@@ -2,7 +2,7 @@
 {{- with .Params.description }}
   {{- $summary = (. | truncate 160) }}
 {{- end }}
-{{- $keywords := .Params.keywords}}
+{{- $keywords := .Params.metakeywords}}
 {{- $site := .Site.Title }}
 {{- $title := .Title }}
 {{- $params := .Site.Params }}

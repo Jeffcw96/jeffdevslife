@@ -6,7 +6,7 @@ description= "How to use Cookie, what is the benefit of using cookie"
 tags = [
   "javascript",
 ]
-keywords= "cookies, Set Cookie, Get Cookie, Cookie Expiry, Cookie Path, Cookie Domain, Cookie Secure"
+metakeywords= "cookies, Set Cookie, Get Cookie, Cookie Expiry, Cookie Path, Cookie Domain, Cookie Secure"
 +++
 
 Cookies are usually small text files, given ID tags that are stored on your computer's browser directory or program data subfolders.

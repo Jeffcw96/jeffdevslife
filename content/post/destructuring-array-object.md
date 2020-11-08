@@ -6,7 +6,7 @@ description = "object destructing, array destructing, spread operator, ES6, java
 tags = [
     "javascript"
 ]
-keywords = "destructure array, destructure object, ES6, Javascript, Spread Operator"
+metakeywords = "destructure array, destructure object, ES6, Javascript, Spread Operator"
 +++
 
 Destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.

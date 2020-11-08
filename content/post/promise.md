@@ -6,7 +6,7 @@ description= "Understand Javascript asynchronous work with Promise"
 tags = [
     "javascript",
 ]
-keywords = "Promise, Javascript, Asynchoronous, Concurrent Javascript, Promise.All"
+metakeywords = "Promise, Javascript, Asynchoronous, Concurrent Javascript, Promise.All"
 +++
 
 Javascript is a single-threaded programming language in the sense that it can only process one statement or only one thing can happen at a time. However, when we have a large scale data coming from API. The program might just stop and wait until the data is fully received from the end point even there are bunch of pending code waiting to be executed right after the request.

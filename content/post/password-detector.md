@@ -7,7 +7,7 @@ tags = [
     "html","css","javascript",
 ]
 featureImage= "/images/pw_detector_03.jpg" # Sets featured image on blog post.
-keywords = "Front-End, Javascript, HTML, CSS, REGEX, Regular Expression"
+metakeywords = "Front-End, Javascript, HTML, CSS, REGEX, Regular Expression"
 +++
 
 In this article, we will create an interative password input and use Regular Expression for validation.

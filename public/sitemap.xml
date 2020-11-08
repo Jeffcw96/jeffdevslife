@@ -4,16 +4,36 @@
   
   <url>
     <loc>https://jeffdevslife.com/</loc>
-    <lastmod>2020-11-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jeffdevslife.com/tags/javascript/</loc>
-    <lastmod>2020-11-01T00:00:00+00:00</lastmod>
+    <loc>https://jeffdevslife.com/tags/golang/</loc>
+    <lastmod>2020-11-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://jeffdevslife.com/post/</loc>
+    <lastmod>2020-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeffdevslife.com/tags/redis/</loc>
+    <lastmod>2020-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeffdevslife.com/post/redis-hash/</loc>
+    <lastmod>2020-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeffdevslife.com/tags/</loc>
+    <lastmod>2020-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeffdevslife.com/tags/javascript/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -23,18 +43,8 @@
   </url>
   
   <url>
-    <loc>https://jeffdevslife.com/tags/</loc>
-    <lastmod>2020-11-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jeffdevslife.com/post/destructuring-array-object/</loc>
     <lastmod>2020-10-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jeffdevslife.com/tags/golang/</loc>
-    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -85,11 +95,6 @@
   <url>
     <loc>https://jeffdevslife.com/post/setup-go-server/</loc>
     <lastmod>2020-08-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jeffdevslife.com/tags/redis/</loc>
-    <lastmod>2020-08-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
