@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Jeff&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Jeff&#39;s all rights reserved.</copyright>
-    <lastBuildDate>Sun, 08 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jeffdevslife.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Async Await</title>
+      <link>https://jeffdevslife.com/post/async-await/</link>
+      <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffdevslife.com/post/async-await/</guid>
+      <description>&lt;p&gt;Async/Await is another way to write asynchronous code in much easier and cleaner way to read. In this article, you will learn how you can simplify and transform your your callback or Promise code into Async/Await way.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Redis Hash</title>
