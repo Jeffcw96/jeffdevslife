@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Jeff&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Jeff&#39;s all rights reserved.</copyright>
-    <lastBuildDate>Sun, 15 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jeffdevslife.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HashMap</title>
+      <link>https://jeffdevslife.com/post/hash-map/</link>
+      <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffdevslife.com/post/hash-map/</guid>
+      <description>&lt;p&gt;Have you ever encountering the issue of long processing time by iterating an array using nested for loop? If yes, &lt;strong&gt;Hashmap(Map)&lt;/strong&gt; might be a good alternative choice to achieve the better result. Javascript itself comes with Hashmaps data structure that can organize and arrange the data into key-value pairs. They are organized as linked list in the sense that it remembers the original insertion order of the keys&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Async Await</title>

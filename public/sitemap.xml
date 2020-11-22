@@ -4,26 +4,36 @@
   
   <url>
     <loc>https://jeffdevslife.com/</loc>
-    <lastmod>2020-11-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jeffdevslife.com/post/async-await/</loc>
-    <lastmod>2020-11-15T00:00:00+00:00</lastmod>
+    <loc>https://jeffdevslife.com/tags/algorithm-data-structure/</loc>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeffdevslife.com/post/hash-map/</loc>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://jeffdevslife.com/tags/javascript/</loc>
-    <lastmod>2020-11-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://jeffdevslife.com/post/</loc>
-    <lastmod>2020-11-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://jeffdevslife.com/tags/</loc>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeffdevslife.com/post/async-await/</loc>
     <lastmod>2020-11-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -60,11 +70,6 @@
   <url>
     <loc>https://jeffdevslife.com/post/cookie/</loc>
     <lastmod>2020-10-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jeffdevslife.com/tags/algorithm-data-structure/</loc>
-    <lastmod>2020-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>

@@ -83,7 +83,6 @@ async function DummyRequestTwo() {
 </div>
 
 ### Summary
-
 There are few things we need to be aware when we use **Async/ Await** function
 * Must include **Async** keyword infront of the function
 * **Await** method is only use for **Resolve** state
