@@ -140,3 +140,7 @@ As we can see, hashmap take much shorter processing time compare to nested for-l
 * Hashmap is useful when trying to iterate and compare the element of array
 * Hashmap will consume more memory compare to for loop
 
+
+{{% endLine %}}
+
+<div class="fb-comments" data-href="https://jeffdevslife.com/post/hash-map/" data-numposts="5" data-width="100%" data-lazy="true"></div>

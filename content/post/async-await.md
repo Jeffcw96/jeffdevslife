@@ -88,4 +88,6 @@ There are few things we need to be aware when we use **Async/ Await** function
 * **Await** method is only use for **Resolve** state
 * Wrap the code inside **Try/ Catch**, resolve state in **(Try)** and reject state inside **(Catch)**
 
+{{% endLine %}}
 
+<div class="fb-comments" data-href="https://jeffdevslife.com/post/async-await/" data-numposts="5" data-width="" data-lazy="true"></div>

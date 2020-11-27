@@ -114,8 +114,8 @@ As we can observe from photo below, eventhough the *promiseOne* and *promiseTwo*
 <img src="/images/promiseAll.gif" alt="Promise all">
 </div>
 
+{{% endLine %}}
 
-
-
+<div class="fb-comments" data-href="https://jeffdevslife.com/post/promise/" data-numposts="5" data-width="" data-lazy="true"></div>
 
 

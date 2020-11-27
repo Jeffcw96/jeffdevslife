@@ -46,3 +46,7 @@ Finally, we can start and serve our server.
 ![](/images/golang_server_10.png)
 
 ![](/images/golang_server_11.png)
+
+{{% endLine %}}
+
+<div class="fb-comments" data-href="https://jeffdevslife.com/post/setup-go-server/" data-numposts="5" data-width="" data-lazy="true"></div>

@@ -148,6 +148,9 @@ var verifyPassword = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\
 
 [Click Me to See Complete Code](https://github.com/Jeffcw96/password_detector/tree/master)
 
+{{% endLine %}}
+
+<div class="fb-comments" data-href="https://jeffdevslife.com/post/password-detector/" data-numposts="5" data-width="" data-lazy="true"></div>
 
 
 

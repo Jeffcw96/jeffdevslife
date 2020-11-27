@@ -37,6 +37,7 @@
 <meta property = "og:title" content = "{{ $title }}" />
 <meta property = "og:description" content = "{{ $summary }}" />
 <meta property = "og:image" content = "{{ $image }}" />
+<meta property="fb:app_id" content="177145747420001" />
 {{- if eq .Section $params.blogDir -}}
   {{- $date := ( .Date.Format "2006-02-01") -}}
   {{- $date := (time .Date) }}

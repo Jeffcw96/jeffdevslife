@@ -89,3 +89,7 @@ document.cookie = 'name=JeffDevs; Secure;'
 {{< /highlight >}}
 
 Adding the Secure parameter makes sure the cookie can only be transmitted securely over HTTPS. For example, we can get the cookie from https://example.com but **not** http://example.com
+
+{{% endLine %}}
+
+<div class="fb-comments" data-href="https://jeffdevslife.com/post/cookie/" data-numposts="5" data-width="" data-lazy="true"></div>

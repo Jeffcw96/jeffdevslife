@@ -62,6 +62,8 @@
 {{ end }}
 
 <body data-code="{{ $maxCodeLines }}" data-lines="{{ $codeLineNumbers }}" id="documentTop">
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_CN/sdk.js#xfbml=1&version=v9.0" nonce="CcqF2W2y"></script>
   {{- partial "nav" . }}
   <main>
     {{- block "main" . }}{{ end }}

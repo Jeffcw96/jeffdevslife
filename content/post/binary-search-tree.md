@@ -159,3 +159,6 @@ It’s pretty straight forward for finding the **Minimum** value of the tree as 
 
 [Check full code here](https://github.com/Jeffcw96/Binary-Search-Tree)
 
+{{% endLine %}}
+
+<div class="fb-comments" data-href="https://jeffdevslife.com/post/binary-search-tree/" data-numposts="5" data-width="" data-lazy="true"></div>

@@ -168,3 +168,7 @@ json.NewEncoder(w).Encode(status)
 **And this is the response we saw in browser**
 
 ![read json byte data](/images/json_6.JPG)
+
+{{% endLine %}}
+
+<div class="fb-comments" data-href="https://jeffdevslife.com/post/json/" data-numposts="5" data-width="" data-lazy="true"></div>

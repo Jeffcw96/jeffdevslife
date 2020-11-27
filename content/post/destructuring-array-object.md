@@ -205,3 +205,7 @@ function checkCompany({ name, age }) {
 
 checkCompany(CompanyOne)
 {{< /highlight >}}
+
+{{% endLine %}}
+
+<div class="fb-comments" data-href="https://jeffdevslife.com/post/destructuring-array-object/" data-numposts="5" data-width="" data-lazy="true"></div>

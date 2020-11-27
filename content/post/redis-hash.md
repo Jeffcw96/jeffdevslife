@@ -120,3 +120,7 @@ Instead of having the standard way which is get all the object in the particular
 isExist := Client.HExists("customer:all", "jeff123@gmail.com").Val()
 fmt.Println(isExist) /*return true*/
 {{< /highlight >}}
+
+{{% endLine %}}
+
+<div class="fb-comments" data-href="https://jeffdevslife.com/post/redis-hash/" data-numposts="5" data-width="" data-lazy="true"></div>

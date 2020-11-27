@@ -38,3 +38,7 @@ However, I strongly recommend to get a redis GUI software so that we can easily 
 I’m using **Redis Desktop Manager** in this case. We can easily enter our info as shown in figure below and all data storing in that particular port will be listed.
 
 ![Redis Desktop Manager](/images/redis_setup_04.jpg)
+
+{{% endLine %}}
+
+<div class="fb-comments" data-href="https://jeffdevslife.com/post/setup-redis/" data-numposts="5" data-width="" data-lazy="true"></div>

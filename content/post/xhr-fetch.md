@@ -122,6 +122,7 @@ The response data/ information also can be found in the response tab .
 
 ![response preview](/images/xhr_fetch_04.png)
 
+{{% endLine %}}
 
-
+<div class="fb-comments" data-href="https://jeffdevslife.com/post/xhr-fetch/" data-numposts="5" data-width="" data-lazy="true"></div>
 
