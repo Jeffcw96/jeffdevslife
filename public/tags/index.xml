@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Jeff&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Jeff&#39;s all rights reserved.</copyright>
-    <lastBuildDate>Sun, 22 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jeffdevslife.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>golang</title>
+      <link>https://jeffdevslife.com/tags/golang/</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffdevslife.com/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>redis</title>
+      <link>https://jeffdevslife.com/tags/redis/</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffdevslife.com/tags/redis/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>algorithm &amp; data-structure</title>
@@ -26,24 +44,6 @@
       <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://jeffdevslife.com/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
-      <link>https://jeffdevslife.com/tags/golang/</link>
-      <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://jeffdevslife.com/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>redis</title>
-      <link>https://jeffdevslife.com/tags/redis/</link>
-      <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://jeffdevslife.com/tags/redis/</guid>
       <description></description>
     </item>
     

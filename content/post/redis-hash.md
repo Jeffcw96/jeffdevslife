@@ -6,7 +6,7 @@ description = "Hash redis structure with Golang"
 tags = [
     "redis", "golang"
 ]
-metakeywords = "github.com/go-redis/redis, redis with golang, redis hash, redis, nosql, redis structure"
+metakeywords = "github.com/go-redis/redis, redis with golang, redis hash, redis, nosql, redis data type, HSet, HMSet, HGetAll, HGet, HExist"
 +++
 
 Redis Hashes are maps between string fields and string values (key-value pair), so they are the perfect data type to represent objects.
@@ -19,9 +19,6 @@ As a result, it's important to plan and think of the redis structure before we m
 In this article, we will be import and use few default package from Golang and Github for [go-redis](https://github.com/go-redis/redis). If you are not sure how to install **Redis Server** in Window. Make sure you checkout my [previous blog to install redis](/post/setup-redis)
 {{< highlight go >}}
 import (
-	"fmt"
-	"strconv"
-	"time"
 	"github.com/go-redis/redis"
 )
 {{< /highlight >}}
@@ -37,7 +34,7 @@ var Client = redis.NewClient(&redis.Options{
 {{< /highlight >}}
 
 ## Incr and HMSet
-As mentioned earlier, redis will not auto generate the ID for every model. As a result, we need to create the customer ID ourself. In this case, we uses the command **Incr** to get the integer value. By default, we do not have any structure for storing the ID. So it will increment from 0 to 1. If that's exist value in the redis structure, it will increment by one respectively.
+As mentioned earlier, redis will not auto generate the ID for every model. As a result, we need to create the customer ID ourself. In this case, we uses the command **Incr** to get the integer value. By default, we do not have any structure for storing the ID. So it will increment from 0 to 1. If that's exist value in the key, it will increment by one respectively.
 {{< highlight go >}}
 customerId := Client.Incr("customer:ids").Val() /*Return 1*/
 {{< /highlight >}}
@@ -61,7 +58,7 @@ Client.HMSet("customer:"+strconv.FormatInt(customerId, 10)+":data", customer)
 
 
 ## HSet
-Let's say if we need to update the redis structure by inserting new data. **HSet** will be a good choice for taking single key field and single value field.
+Let's say if we need to update the field by inserting new data. **HSet** will be a good choice for taking single key field and single value field.
 HSet takes in 3 argument where first one will be the path, second is the key, and third will be the value.
 {{< highlight go >}}
 //HSet(key, field string, value interface{})
@@ -110,7 +107,7 @@ fmt.Println(customerName) /*return 'Jeff'*/
 {{< /highlight >}}
 
 ## HExist
-Let's say we now have multiple email data in a redis structure call **customer:all** and we wanted to check whether our desired email is existed or not.
+Let's say we now have multiple email data in a key call **customer:all** and we wanted to check whether our desired email is existed or not.
 
 ![Golang HExist command](/images/go_redis_03.JPG)
 

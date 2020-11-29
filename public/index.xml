@@ -6,10 +6,21 @@
     <description>Recent content on Jeff&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Jeff&#39;s all rights reserved.</copyright>
-    <lastBuildDate>Sun, 22 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jeffdevslife.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Redis List</title>
+      <link>https://jeffdevslife.com/post/redis-list/</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffdevslife.com/post/redis-list/</guid>
+      <description>Redis Lists are simply lists of strings, sorted by insertion order. It is possible to add elements to a Redis List pushing new elements on the head (LPUSH) or on the tail (RPUSH) of the list.
+We will be covered few basic commands for this List data type. We also will use the go-redis package for some having some example code wrriten in Golang.
+ LRANGE LPUSH LPOP RPUSH RPOP LSET  Setup and connect redis server in Golang 1var Client = redis.</description>
+    </item>
     
     <item>
       <title>HashMap</title>
