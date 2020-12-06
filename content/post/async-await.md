@@ -90,4 +90,4 @@ There are few things we need to be aware when we use **Async/ Await** function
 
 {{% endLine %}}
 
-<div class="fb-comments" data-href="https://jeffdevslife.com/post/async-await/" data-numposts="5" data-width="" data-lazy="true"></div>
+<div class="fb-comments" data-href="https://jeffdevslife.com/post/async-await/" data-numposts="5" ></div>

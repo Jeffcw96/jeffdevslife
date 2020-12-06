@@ -116,6 +116,6 @@ As we can observe from photo below, eventhough the *promiseOne* and *promiseTwo*
 
 {{% endLine %}}
 
-<div class="fb-comments" data-href="https://jeffdevslife.com/post/promise/" data-numposts="5" data-width="" data-lazy="true"></div>
+<div class="fb-comments" data-href="https://jeffdevslife.com/post/promise/" data-numposts="5"  ></div>
 
 

@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Jeff&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Jeff&#39;s all rights reserved.</copyright>
-    <lastBuildDate>Sun, 29 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jeffdevslife.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to center a DOM element</title>
+      <link>https://jeffdevslife.com/post/center-element/</link>
+      <pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffdevslife.com/post/center-element/</guid>
+      <description>&lt;p&gt;Center an element sometimes can be very confusing. It can be center horizontally, center vertically or center both horizontally and vertically in the same time. In this article, we will be discussed different methods to center the element in different situation.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Redis List</title>

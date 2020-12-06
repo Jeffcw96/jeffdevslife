@@ -7,7 +7,8 @@
   const bank = window.localStorage;
 
   function currentMode() {
-    let acceptableChars = light + dark;
+    // let acceptableChars = light + dark;
+    let acceptableChars = light
     acceptableChars = [...acceptableChars];
     let mode = getComputedStyle(doc).getPropertyValue(key).replace(/\"/g, '').trim();
 
@@ -29,33 +30,35 @@
   }
 
   function setUserColorMode(mode = false) {
-    const isDarkMode = currentMode() == dark;
+    //const isDarkMode = currentMode() == dark;
     const storedMode = bank.getItem(storageKey);
     if (storedMode) {
       if (mode) {
-        changeMode(isDarkMode);
+        // changeMode(isDarkMode);
+        changeMode('lit');
       } else {
         elemAttribute(doc, data, storedMode);
       }
     } else {
       if (mode === true) {
-        changeMode(isDarkMode)
+        // changeMode(isDarkMode)
+        changeMode('lit');
       }
     }
   }
 
   setUserColorMode();
 
-  doc.addEventListener('click', function (event) {
-    let target = event.target;
-    let modeClass = 'color_choice';
-    let animateClass = 'color_animate';
-    let isModeToggle = containsClass(target, modeClass);
-    if (isModeToggle) {
-      pushClass(target, animateClass);
-      setUserColorMode(true);
-    }
-  });
+  // doc.addEventListener('click', function (event) {
+  //   let target = event.target;
+  //   let modeClass = 'color_choice';
+  //   let animateClass = 'color_animate';
+  //   let isModeToggle = containsClass(target, modeClass);
+  //   if (isModeToggle) {
+  //     pushClass(target, animateClass);
+  //     setUserColorMode(true);
+  //   }
+  // });
 })();
 
 function fileClosure() {

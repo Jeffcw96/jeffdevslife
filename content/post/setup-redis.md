@@ -41,4 +41,4 @@ I’m using **Redis Desktop Manager** in this case. We can easily enter our info
 
 {{% endLine %}}
 
-<div class="fb-comments" data-href="https://jeffdevslife.com/post/setup-redis/" data-numposts="5" data-width="" data-lazy="true"></div>
+<div class="fb-comments" data-href="https://jeffdevslife.com/post/setup-redis/" data-numposts="5"  ></div>

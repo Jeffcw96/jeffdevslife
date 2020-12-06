@@ -92,4 +92,4 @@ Adding the Secure parameter makes sure the cookie can only be transmitted secure
 
 {{% endLine %}}
 
-<div class="fb-comments" data-href="https://jeffdevslife.com/post/cookie/" data-numposts="5" data-width="" data-lazy="true"></div>
+<div class="fb-comments" data-href="https://jeffdevslife.com/post/cookie/" data-numposts="5"  ></div>

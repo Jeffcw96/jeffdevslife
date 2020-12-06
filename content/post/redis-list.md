@@ -149,6 +149,6 @@ Client.LSet("allList", -1, "disappointed") /*allList > [determined, upset, sad, 
 
 {{% endLine %}}
 
-<div class="fb-comments" data-href="https://jeffdevslife.com/post/redis-list/" data-numposts="5" data-width="" data-lazy="true"></div>
+<div class="fb-comments" data-href="https://jeffdevslife.com/post/redis-list/" data-numposts="5"  ></div>
 
 

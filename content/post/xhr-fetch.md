@@ -124,5 +124,5 @@ The response data/ information also can be found in the response tab .
 
 {{% endLine %}}
 
-<div class="fb-comments" data-href="https://jeffdevslife.com/post/xhr-fetch/" data-numposts="5" data-width="" data-lazy="true"></div>
+<div class="fb-comments" data-href="https://jeffdevslife.com/post/xhr-fetch/" data-numposts="5"  ></div>
 

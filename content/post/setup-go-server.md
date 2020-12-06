@@ -49,4 +49,4 @@ Finally, we can start and serve our server.
 
 {{% endLine %}}
 
-<div class="fb-comments" data-href="https://jeffdevslife.com/post/setup-go-server/" data-numposts="5" data-width="" data-lazy="true"></div>
+<div class="fb-comments" data-href="https://jeffdevslife.com/post/setup-go-server/" data-numposts="5"  ></div>

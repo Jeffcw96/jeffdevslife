@@ -143,4 +143,4 @@ As we can see, hashmap take much shorter processing time compare to nested for-l
 
 {{% endLine %}}
 
-<div class="fb-comments" data-href="https://jeffdevslife.com/post/hash-map/" data-numposts="5" data-width="" data-lazy="true"></div>
+<div class="fb-comments" data-href="https://jeffdevslife.com/post/hash-map/" data-numposts="5"></div>
