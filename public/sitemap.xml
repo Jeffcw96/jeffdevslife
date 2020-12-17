@@ -4,7 +4,27 @@
   
   <url>
     <loc>https://jeffdevslife.com/</loc>
-    <lastmod>2020-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeffdevslife.com/tags/golang/</loc>
+    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeffdevslife.com/post/</loc>
+    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeffdevslife.com/post/restapi-with-golang/</loc>
+    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jeffdevslife.com/tags/</loc>
+    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -20,21 +40,6 @@
   <url>
     <loc>https://jeffdevslife.com/tags/html/</loc>
     <lastmod>2020-12-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jeffdevslife.com/post/</loc>
-    <lastmod>2020-12-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jeffdevslife.com/tags/</loc>
-    <lastmod>2020-12-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jeffdevslife.com/tags/golang/</loc>
-    <lastmod>2020-11-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>

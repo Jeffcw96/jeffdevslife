@@ -6,10 +6,20 @@
     <description>Recent content on Jeff&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Jeff&#39;s all rights reserved.</copyright>
-    <lastBuildDate>Sun, 06 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jeffdevslife.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>REST API with Go</title>
+      <link>https://jeffdevslife.com/post/restapi-with-golang/</link>
+      <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffdevslife.com/post/restapi-with-golang/</guid>
+      <description>In this article, we are going to build a simple restful service with Golang by using Gorilla Mux package.
+Prerequisites:  Before everything started. Please make sure you have installed GO and set as your environment variable.. It would be better if you already understand how to create a simple web server with GO.  We will be covered 4 common HTTP methods in our REST API as well as the testing tool for testing each endpoints</description>
+    </item>
     
     <item>
       <title>How to center a DOM element</title>
